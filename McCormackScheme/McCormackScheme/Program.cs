@@ -32,15 +32,14 @@ internal class WSPCalculator
     }
 
     #region Fields 
-    private const double K = 1.49;
     #endregion
+
     #region Properties
     double InitialVelocity { get; }
     double ManningsN { get; }
     double BedSlope { get; }
     double BankSlopeHorizontalToOne { get; }
     double BottomWidth { get; }
-
     double InitialDepth { get; }
     double GravitationalConstant { get; }
     int TimeStep { get; }
