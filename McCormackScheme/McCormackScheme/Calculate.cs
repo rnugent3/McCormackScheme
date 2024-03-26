@@ -15,7 +15,6 @@ namespace McCormackScheme
         {
             double hydraulicRadius = TrapezoidalArea(depth, bottomWidth, bankSlopeHorizontalToOne) / TrapezoidalWettedPerimeter(bottomWidth, depth, bankSlopeHorizontalToOne);
             return (Math.Pow(velocity, 2) * Math.Pow(manningsN, 2)) / (Math.Pow(k, 2) * Math.Pow(hydraulicRadius, (4 / 3)));
-
         }
 
         private static double TrapezoidalArea(double depthSolution, double bottomWidth, double bankSlopeHorizontalOnONe)
