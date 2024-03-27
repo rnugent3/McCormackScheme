@@ -1,0 +1,15 @@
+C:\Code\C#\McCormackScheme\McCormackScheme\McCormackScheme\bin\Debug\net7.0\McCormackScheme.exe
+C:\Code\C#\McCormackScheme\McCormackScheme\McCormackScheme\bin\Debug\net7.0\McCormackScheme.deps.json
+C:\Code\C#\McCormackScheme\McCormackScheme\McCormackScheme\bin\Debug\net7.0\McCormackScheme.runtimeconfig.json
+C:\Code\C#\McCormackScheme\McCormackScheme\McCormackScheme\bin\Debug\net7.0\McCormackScheme.dll
+C:\Code\C#\McCormackScheme\McCormackScheme\McCormackScheme\bin\Debug\net7.0\McCormackScheme.pdb
+C:\Code\C#\McCormackScheme\McCormackScheme\McCormackScheme\obj\Debug\net7.0\McCormackScheme.csproj.AssemblyReference.cache
+C:\Code\C#\McCormackScheme\McCormackScheme\McCormackScheme\obj\Debug\net7.0\McCormackScheme.GeneratedMSBuildEditorConfig.editorconfig
+C:\Code\C#\McCormackScheme\McCormackScheme\McCormackScheme\obj\Debug\net7.0\McCormackScheme.AssemblyInfoInputs.cache
+C:\Code\C#\McCormackScheme\McCormackScheme\McCormackScheme\obj\Debug\net7.0\McCormackScheme.AssemblyInfo.cs
+C:\Code\C#\McCormackScheme\McCormackScheme\McCormackScheme\obj\Debug\net7.0\McCormackScheme.csproj.CoreCompileInputs.cache
+C:\Code\C#\McCormackScheme\McCormackScheme\McCormackScheme\obj\Debug\net7.0\McCormackScheme.dll
+C:\Code\C#\McCormackScheme\McCormackScheme\McCormackScheme\obj\Debug\net7.0\refint\McCormackScheme.dll
+C:\Code\C#\McCormackScheme\McCormackScheme\McCormackScheme\obj\Debug\net7.0\McCormackScheme.pdb
+C:\Code\C#\McCormackScheme\McCormackScheme\McCormackScheme\obj\Debug\net7.0\McCormackScheme.genruntimeconfig.cache
+C:\Code\C#\McCormackScheme\McCormackScheme\McCormackScheme\obj\Debug\net7.0\ref\McCormackScheme.dll
