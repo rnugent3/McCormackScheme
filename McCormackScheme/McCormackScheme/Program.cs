@@ -25,8 +25,10 @@ internal class WSPCalculator
         double distanceStep = Convert.ToDouble(Console.ReadLine());
         Console.WriteLine("What is the simulation time period?");
         double totalTime = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine("What is the length of the channel?");
+        double channelLength = Convert.ToDouble(Console.ReadLine());
 
-        WSPCalculator calculator = new WSPCalculator(initialVelocity, n, bedSlope, bankSlope, bottomWidth, initialDepth, g, timeStep, distanceStep, totalTime);
+        WSPCalculator calculator = new WSPCalculator(initialVelocity, n, bedSlope, bankSlope, bottomWidth, initialDepth, g, timeStep, distanceStep, totalTime, channelLength);
 
         Console.WriteLine("Done.");
     }
@@ -45,12 +47,12 @@ internal class WSPCalculator
     int TimeStep { get; }
     double DistanceStep { get; }
     double TotalTime { get; }
-
+    double ChannelLength { get; }
     #endregion
 
     #region Constructor 
 
-    public WSPCalculator(double velocity, double manningsN, double bedSlope, double horizontalToONe, double bottomWidth, double initialDepth, double g, int timeStep, double distanceStep, double totalTime)
+    public WSPCalculator(double velocity, double manningsN, double bedSlope, double horizontalToONe, double bottomWidth, double initialDepth, double g, int timeStep, double distanceStep, double totalTime, double channelLength)
     {
         InitialVelocity = velocity;
         ManningsN = manningsN;
@@ -62,6 +64,7 @@ internal class WSPCalculator
         TimeStep = timeStep;
         DistanceStep = distanceStep;
         TotalTime = totalTime;
+        ChannelLength = channelLength;
     }
 
     #endregion
@@ -69,6 +72,28 @@ internal class WSPCalculator
     #region Methods
     public void ComputeWSPs()
     {
+        int nx = Convert.ToInt32(Math.Ceiling(ChannelLength / DistanceStep));
+        int nt = Convert.ToInt32(Math.Ceiling(TotalTime/TimeStep));
+        double[] gridPoints = new double[nx];
+        for (int i = 0; i < nx; i++)
+        {
+            gridPoints[i] = i* DistanceStep;
+        }
+        double[] depths = new double[nx];
+        double[] velocities = new double[nx];
+        double[] discharges = new double[nx];
+        for (int i = 0;i < nx; i++)
+        {
+            depths[i] = InitialDepth;
+            velocities[i] = InitialVelocity;
+            discharges[i] = 0;
+        }
+
+        //Iterate over time steps?
+        for (int i = 0; i < nt ; i++)
+        {
+            //Perform McCormack 
+        }
 
     }
 

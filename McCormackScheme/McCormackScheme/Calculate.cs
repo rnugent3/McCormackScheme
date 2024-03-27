@@ -17,6 +17,16 @@ namespace McCormackScheme
             return (Math.Pow(velocity, 2) * Math.Pow(manningsN, 2)) / (Math.Pow(k, 2) * Math.Pow(hydraulicRadius, (4 / 3)));
         }
 
+        internal static double ManningsFrictionSlope(double velocity, double depth, double manningsN, double bankSlopeHorizontalToOne)
+        {
+            return (Math.Pow(velocity, 2) * Math.Pow(manningsN, 2)) / HydraulicRadius(depth, bankSlopeHorizontalToOne);
+        }
+
+        private static double HydraulicRadius(double depth, double bankSlopeHorizontalToOne)
+        {
+            return depth + bankSlopeHorizontalToOne * Math.Pow(depth, 2);
+        }
+
         private static double TrapezoidalArea(double depthSolution, double bottomWidth, double bankSlopeHorizontalOnONe)
         {
             return depthSolution * bottomWidth + bankSlopeHorizontalOnONe * Math.Pow(depthSolution, 2);
